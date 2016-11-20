@@ -64,7 +64,7 @@ class Kint
 			array( 'kint', 'trace' ),
 		),
 		'functions' => array(
-			'd',
+			'dg',
 			'dd',
 			'ddd',
 			's',
@@ -734,13 +734,13 @@ class Kint
 }
 
 
-if ( !function_exists( 'd' ) ) {
+if ( !function_exists( 'dg' ) ) {
 	/**
 	 * Alias of Kint::dump()
 	 *
 	 * @return string
 	 */
-	function d()
+	function dg()
 	{
 		if ( !Kint::enabled() ) return '';
 		$_ = func_get_args();
